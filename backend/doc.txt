@@ -1,0 +1,7 @@
+
+step1=> npm init -y to create backend project
+step2=> npm i express mongoose dotenv cloudinary cors @clerk/express socket.io -D nodemon
+step 3=> Create routes 
+step 4 => Create db.js to connect mongodb
+step 5=> Create models
+step 6=> Create controllers

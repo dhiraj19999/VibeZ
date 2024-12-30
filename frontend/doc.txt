@@ -1,0 +1,6 @@
+
+
+step1=>  create react project
+step2=> Integrate tailwind and shadcn
+step3=> Integrate Authentication  clerk , users get stored in Clerk dashboard
+step 4=> Backend=> After sign up in clerk users must add to database so build api
