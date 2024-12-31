@@ -5,3 +5,4 @@ step 3=> Create routes
 step 4 => Create db.js to connect mongodb
 step 5=> Create models
 step 6=> Create controllers
+step 7 => Create middlewares and auth and isadmin middelware
