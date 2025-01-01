@@ -1,21 +1,23 @@
-import { useState } from 'react'
+import { Routes } from "react-router-dom"
 
-
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import { Route } from "react-router-dom"
+import HomePage from "./Pages/home/HomePage"
+import AuthCallbackPage from "./Pages/auth-callback/AuthCallbackPage"
+import { AuthenticateWithRedirectCallback } from "@clerk/clerk-react"
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
       
-      <header>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-    </header>
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/auth-callback" element={<AuthCallbackPage/>} />
+      <Route
+					path='/sso-callback'
+					element={<AuthenticateWithRedirectCallback signUpForceRedirectUrl={"/auth-callback"} />}
+				/>
+    </Routes>
      
     </>
   )
