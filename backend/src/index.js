@@ -15,7 +15,7 @@ import { connectDB } from './lib/db.js';
 dotenv.config();
 const __dirname = path.resolve();
 const app = express();
-app.use(cors());
+app.use(cors({origin:"http://localhost:3000"})); // Enable CORS for all origins
 app.use(express.json()); // Parse JSON request body
 app.use(clerkMiddleware()) // this will add auth to req obj =>req.auth
 app.use(fileUpload({useTempFiles:true,tempFileDir:path.join(__dirname,'tmp') // Temporary directory for file uploads
