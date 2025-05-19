@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    // other options
+    "jsx": "react",
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  }
+}
